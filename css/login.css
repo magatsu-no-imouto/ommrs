@@ -1,0 +1,187 @@
+body {
+      background: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .card-login {
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      margin: 1rem auto;
+      position: relative;
+      border: none;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .header-section {
+      text-align: left;
+      padding: 2rem 1.5rem;
+      background: #00427c;
+      border-radius: 1rem 1rem 0 0;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .header-section img {
+      width: 80px;
+      height: 80px;
+      border: 3px solid rgba(255, 255, 255, 0.9);
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .header-section .title-container {
+      flex-grow: 1;
+    }
+
+    .header-section h1 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .header-section p {
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      opacity: 0.9;
+      margin-bottom: 0;
+    }
+
+    .card-body {
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+    }
+
+    .form-control {
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      border: 1px solid #dee2e6;
+      transition: all 0.2s ease;
+      font-size: 1rem;
+    }
+
+    .form-control:focus {
+      border-color: #00427c;
+      box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.15);
+    }
+
+    .input-group-text {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+    }
+
+    .btn-primary {
+      background-color: #00427c;
+      border-color: #00427c;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      font-weight: 600;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #00427c;
+      border-color: #00427c;
+      transform: translateY(-1px);
+    }
+
+    .form-label {
+      font-weight: 500;
+      color: #495057;
+      margin-bottom: 0.5rem;
+      font-size: clamp(0.85rem, 2vw, 0.9rem);
+    }
+
+    .form-check-label {
+      color: #6c757d;
+      font-size: clamp(0.85rem, 2vw, 0.9rem);
+    }
+
+    .text-muted {
+      color: #6c757d !important;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      font-size: clamp(0.85rem, 2vw, 0.9rem);
+    }
+
+    .text-muted:hover {
+      color: #00427c!important;
+    }
+
+    footer {
+      background: #00427c;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem;
+      z-index: 1;
+      font-size: clamp(0.75rem, 2vw, 0.85rem);
+    }
+
+    #messageContainer {
+      margin-bottom: 1.5rem;
+    }
+
+    .alert {
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      font-size: clamp(0.85rem, 2vw, 0.9rem);
+    }
+
+    .form-check-input:checked {
+      background-color: #8B0000;
+      border-color: #8B0000;
+    }
+
+    @media (max-width: 576px) {
+      .card-login {
+        width: 95%;
+        margin: 0.5rem auto;
+      }
+
+      .card-body {
+        padding: 1.25rem;
+      }
+
+      .header-section {
+        padding: 1.25rem 1rem;
+        gap: 1rem;
+      }
+
+      .header-section img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .mb-4 {
+        margin-bottom: 1rem !important;
+      }
+
+      .form-control {
+        padding: 0.6rem 0.75rem;
+      }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      .card-login {
+        width: 85%;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .card-login {
+        width: 80%;
+      }
+    }
+
+    @media (min-height: 800px) {
+      .card-login {
+        margin: 2rem auto;
+      }
+    }
